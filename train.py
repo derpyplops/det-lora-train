@@ -84,6 +84,12 @@ def main() -> None:
         help="If >0, save a Trainer checkpoint every N steps (used to seed --resume-from).",
     )
     parser.add_argument(
+        "--logging-steps",
+        type=int,
+        default=0,
+        help="Override Trainer logging cadence. 0 = auto-pick based on total steps.",
+    )
+    parser.add_argument(
         "--resume-from",
         type=Path,
         default=None,
@@ -127,7 +133,7 @@ def main() -> None:
         gradient_accumulation_steps=1,
         learning_rate=1e-4,
         warmup_steps=0,
-        logging_steps=5,
+        logging_steps=args.logging_steps or max(5, args.steps // 100),
         save_strategy=save_strategy,
         save_steps=args.save_steps if args.save_steps > 0 else 500,
         save_total_limit=None,
