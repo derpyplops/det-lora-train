@@ -1,0 +1,6 @@
+Loaded 3 adapters, 96 tensors each.
+  run-1 vs run-2: BITWISE EQUAL  max|Δ|=0.000e+00  first_diff=None
+  run-1 vs run-3: BITWISE EQUAL  max|Δ|=0.000e+00  first_diff=None
+  run-2 vs run-3: BITWISE EQUAL  max|Δ|=0.000e+00  first_diff=None
+
+RESULT: DETERMINISTIC ✓

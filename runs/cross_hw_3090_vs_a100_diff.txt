@@ -1,0 +1,4 @@
+Loaded 2 adapters, 96 tensors each.
+  cross_hw vs cross_hw: DIFFER  max|Δ|=5.530e-05  first_diff=base_model.model.model.layers.0.self_attn.q_proj.lora_A.weight
+
+RESULT: NONDETERMINISTIC ✗

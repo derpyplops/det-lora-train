@@ -1,0 +1,4 @@
+Loaded 2 adapters, 96 tensors each.
+  A-direct vs B-part2: DIFFER  max|Δ|=9.652e-04  first_diff=base_model.model.model.layers.0.self_attn.q_proj.lora_A.weight
+
+RESULT: NONDETERMINISTIC ✗
